@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+
+:root {
+  --black: #000000;
+  --grey: #5d6d7c;
+  --lightgrey: #7f7f7f;
+  --white: #f2efe2;
+  --yellow: #fdd000;
+  --gold: #e3a765;
+}
+
+body {
+  background-color: var(--black);
+}
+
+#home {
+  color: var(--white);
+}
+
+#title {
+  color: var(--white);
+  text-align: center;
+  font-size: 4rem;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  height: auto;
+}
+
+#img-caption {
+  font-size: 0.8rem;
+  text-align: right;
+  padding: 0 10px;
+  color: var(--white);
+}
+
+nav {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  color: var(--white);
+  background-color: var(--black);
+  margin: 0;
+  border-radius: 20px 0 0 20px;
+}
+
+nav ul li {
+  list-style: none;
+  text-align: center;
+}
+
+i {
+  color: var(--lightgrey);
+  font-size: 1.5em;
+  margin: 20px 10px 20px 0;
+}
+
+i:hover {
+  color: var(--white);
+}
+
+h1 {
+  color: var(--white);
+  width: 70%;
+  margin: auto;
+  font-size: 3em;
+}
+
+.timeline-box {
+  width: 70%;
+  margin: 40px auto;
+  border-bottom: 1px solid;
+  color: var(--lightgrey);
+}
+
+.timeline-box h2 {
+  color: var(--white);
+}
+
+.timeline-box:hover {
+  color: var(--white);
+  border-bottom: 1px solid white;
+}
+
+#quotes blockquote:nth-child(even) {
+  margin-left: 100px;
+}
+
+#quotes blockquote:nth-child(even) p {
+  text-align: left;
+}
+
+#quotes blockquote:nth-child(odd) {
+  margin-right: 100px;
+}
+
+#quotes h1 {
+  margin-top: 100px;
+}
+
+.quote-box {
+  color: var(--white);
+  width: 70%;
+  margin: 60px auto;
+  font-family: "Vollkorn", serif;
+  font-size: 2rem;
+}
+
+.quote-box p {
+  text-align: right;
+  font-size: 1rem;
+  color: var(--lightgrey);
+}
+
+footer {
+  border-top: 1px solid white;
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 0 10px;
+  margin-top: 100px;
+}
+
+footer a {
+  color: var(--yellow);
+}
+
+footer a:hover {
+  color: orange;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .timeline-box {
+    color: var(--white);
+  }
+
+  .quote-box {
+    font-family: inherit;
+    font-size: 1.3em;
+    width: 90%;
+  }
+
+  #quotes h1 {
+    font-size: 2.2em;
+  }
+
+  #quotes blockquote:nth-child(even) {
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  #quotes blockquote:nth-child(odd) {
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  #quotes blockquote:nth-child(even) p {
+    text-align: center;
+  }
+
+  #quotes blockquote:nth-child(odd) p {
+    text-align: center;
+  }
+
+  footer {
+    font-size: 0.8em;
+    padding: 10px 5px 0 5px;
+  }
+}
+
+@media (max-width: 481px) {
+  html {
+    font-size: 70%;
+  }
+
+  .quote-box {
+    font-family: inherit;
+    font-size: 1.1em;
+    width: 90%;
+  }
+
+  #quotes h1 {
+    font-size: 2em;
+  }
+
+  footer {
+    font-size: 0.7em;
+  }
+}
